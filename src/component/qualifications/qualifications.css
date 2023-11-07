@@ -1,0 +1,75 @@
+.quali-text {
+  font-size: 20px;
+  top: 10px;
+}
+
+.qualifications-container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  height: 80%;
+  width: 90%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 15px;
+  user-select: none;
+}
+
+.qualifications-container .qualifications {
+  position: relative;
+  content: "";
+  height: 550px;
+  min-width: 40%;
+  background: rgb(9, 6, 31);
+  border-radius: 20px;
+  margin: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.qualifications-container .qualifications .content {
+  height: 85%;
+  width: 90%;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-size: contain;
+  background-position: center;
+}
+
+.qualifications-container .qualifications h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.qualifications-container .qualifications .content .html {
+  background: url(../../img.png);
+  background-position: center;
+  background-size: 60px;
+}
+
+.qualifications-container .qualifications .content .CSS {
+  background: url(../../img.png);
+  background-position: center;
+  background-size: 60px;
+}
+
+.qualifications-container .qualifications .content .JavaScript {
+  background: url(../../img.png);
+  background-position: center;
+  background-size: 90px;
+}
+
+.qualifications-container .qualifications .content .ReactJS {
+  background: url(../../img.png);
+  background-position: center;
+  background-size: 60px;
+}
+.qualifications-container .qualifications .content .NextJS {
+  background: url(../../img.png);
+  background-position: center;
+  background-size: 60px;
+}

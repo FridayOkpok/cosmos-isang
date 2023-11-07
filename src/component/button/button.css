@@ -1,0 +1,122 @@
+.button-contain {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 90%;
+  padding: 0;
+}
+
+.button-contain .btn {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-pri);
+  transition: 0.2s ease;
+  overflow: hidden;
+  /* Add initial box-shadow style */
+  box-shadow: 0 0 0 transparent;
+  border-radius: 0.5rem;
+  /* Set an initial transparent shadow */
+}
+
+.button-contain .btn:hover {
+  /* Add box-shadow on hover */
+  border: 2px solid aqua;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Customize the shadow as needed */
+}
+
+.button-contain a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.button-contain .btn.pri {
+  height: 40px;
+  width: 90px;
+  border: 2px solid aqua;
+  border-radius: 0.5rem;
+}
+
+.button-contain .btn .pri:hover {
+  border: none;
+  background-color: var(--color-sec);
+}
+
+.button-contain .btn .pri::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  left: 0;
+  transition: 0.2s ease;
+}
+
+.button-contain .btn .pri::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  left: 0;
+  transition: 0.4s ease;
+}
+
+.button-contain .btn .pri:hover::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 65%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button-contain .btn .pri:hover::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.837);
+}
+
+.button-contain .btn .pri.sec {
+  background-color: var(--color-pri-light);
+}
+
+.button-contain .btn .pri.sec:hover {
+  border: 2px solid var(--color-pri);
+  background-color: transparent;
+}
+
+.button-contain .btn .pri .sec ::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 65%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.216);
+  transition: 0.2s ease;
+}
+
+.button-contain .btn .pri .sec ::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.216);
+  transition: 0.4s ease;
+}
+
+.button-contain .btn .sec:hover::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0;
+  left: 0;
+}
